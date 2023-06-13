@@ -1,5 +1,87 @@
-template-repository (1.0-1) unstable; urgency=medium
+libasa-perl (1.04-3) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + libasa-perl: Add Multi-Arch: foreign.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Thu, 13 Oct 2022 17:20:06 +0100
+
+libasa-perl (1.04-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update standards version to 4.5.0, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Thu, 30 Jun 2022 09:23:11 +0100
+
+libasa-perl (1.04-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Import upstream version 1.04.
+  * Update debian/copyright:
+    New Upstream-Contact; removed third-party files; refreshed license
+    stanzas.
+  * Install new upstream CONTRIBUTING document.
+  * Declare compliance with Debian Policy 4.4.1.
+  * Bump debhelper-compat to 12.
+  * debian/watch: use uscan version 4.
+  * Add debian/upstream/metadata.
+  * Drop libtest-pod-perl from Build-Depends-Indep.
+    The test is an author test now.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 02 Nov 2019 21:37:02 +0100
+
+libasa-perl (1.03-1) unstable; urgency=low
+
+  * Team upload
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Changed: Replace versioned (build-)dependency on
+    perl (>= 5.6.0-{12,16}) with an unversioned dependency on perl (as
+    permitted by Debian Policy 3.8.3).
+
+  [ Jonathan Yu ]
+  * New upstream release
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ Damyan Ivanov ]
+  * mark package as autopkg-testable
+  * use source format '3.0 (quilt)'
+  * use 3-line debian/rules
+  * Declare conformance with Policy 3.9.6
+
+ -- Damyan Ivanov <dmn@debian.org>  Thu, 26 Nov 2015 20:49:30 +0000
+
+libasa-perl (0.02-1) unstable; urgency=low
+
+  * Initial Release.  (Closes: #526345)
+
+ -- Peter Pentchev <roam@ringlet.net>  Thu, 30 Apr 2009 18:25:05 +0300
